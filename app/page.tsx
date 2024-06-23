@@ -1,12 +1,15 @@
-import Image from "next/image";
-import { FC, FunctionComponent, ReactNode } from "react";
-
-type Props = {
-  children: ReactNode;
-};
+import Hero from "@/components/Hero";
+import HomeProperty from "@/components/HomeProperty";
+import { InfoBoxes } from "@/components/InfoBoxes";
 
 const Home = () => {
-  return <h3>Home</h3>;
+  return (
+    <>
+      <Hero />
+      <InfoBoxes />
+      <HomeProperty />
+    </>
+  );
 };
 
 export default Home;
